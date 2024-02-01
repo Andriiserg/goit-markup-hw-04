@@ -74,6 +74,18 @@ a:focus {
     color: #2E2F42;
 }
 
+.header-studio:hover::after {
+    content: "";
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--OCEAN, #404BBF);
+    margin-top: 20px;
+}
+
 .navigation-list {
     color: #2E2F42;
     font-size: 16px;
@@ -121,6 +133,10 @@ a:focus {
 
 .main-section {
     background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     flex-shrink: 0;
     text-align: center;
     padding-top: 188px;
@@ -215,6 +231,23 @@ a:focus {
     gap: 24px;
 }
 
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    margin-bottom: 8px;
+}
+
+.features-icon {
+    position: relative;
+}
+
 /*! third section - OUR TEAM */
 
 .our-team-ul {
@@ -268,6 +301,38 @@ a:focus {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.icon-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8px
+}
+
+.icon-item {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.icon-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+}
+
+.icon-link:hover {
+    background-color: #404BBF;
+}
+
+.icon-team {
+    fill: transparent;
 }
 
 /*! fourth section - PORTFOLIO */
@@ -352,4 +417,51 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+
+.footer-parts{
+    display: flex;
+}
+
+.div-soc-media {
+    margin-left: 120px;
+}
+
+.footer-soc-media {
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.footer-item {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.footer-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+}
+
+.footer-icon {
+    fill: transparent;
+}
+
+.footer-link:hover {
+    background-color: #31D0AA;
 }
